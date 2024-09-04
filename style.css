@@ -257,7 +257,7 @@ body{
     background-color: #2f281e;
     color: #e3e3e2;
 
-    transition: 300ms;
+    transition: 500ms;
 }
 .banner-btn-brown:hover{
     background-color: #e3e3e2;
@@ -275,7 +275,7 @@ body{
     background-color: #710000;
     color: #f4c7b9;
 
-    transition: 300ms;
+    transition: 500ms;
 }
 .banner-btn-red:hover{
     background-color: #f4c7b9;
@@ -296,12 +296,50 @@ body{
     font-size: 35px;
 }
 
+.slidebar-option-area{
+    padding: 10px 300px;
+}
+.slidebar-option-scroll{
+    overflow-x: auto;
+    white-space: nowrap;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px;
+}
+.slidebar-items{
+    text-decoration: none;
+    color: #002a32;
+    background-color: #F5F5F7;
+    padding: 10px 5px;
+    border: 2px solid #F5F5F7;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 17px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    transition: 300ms;
+}
+.slidebar-items:hover{
+    border: 2px solid #002a32; 
+}
+
 @media screen and (max-width: 1200px) {
     .header-top-list{
         padding-right: 100px;
     }
     .header-bottom-search-input{
         width: 450px;
+    }
+    .slidebar-option-area{
+        padding: 10px 150px;
     }
 }
 
@@ -358,6 +396,10 @@ body{
 
     .banner-title{
         font-size: 23px;
+    }
+
+    .slidebar-option-area{
+        padding: 10px 10px;
     }
 }
 
