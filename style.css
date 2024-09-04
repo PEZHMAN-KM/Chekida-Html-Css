@@ -235,6 +235,12 @@ body{
     border-radius: 30px;
     gap: 120px;
 }
+.banner-text-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
 .banner-image{
     border-radius: 20px;
     width: 150px;
@@ -257,6 +263,25 @@ body{
     background-color: #e3e3e2;
     color: #2f281e;
 }
+.banner-btn-red{
+    border: 2px solid #f4c7b9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 80px;
+    width: 400px;
+    padding: 0px;
+    gap: 20px;
+    background-color: #710000;
+    color: #f4c7b9;
+
+    transition: 300ms;
+}
+.banner-btn-red:hover{
+    background-color: #f4c7b9;
+    color: #710000;
+}
+
 .banner-btn-text{
     margin: 0px;
     padding: 10px;
@@ -313,6 +338,9 @@ body{
         display: none;
     }
 
+    .banner-text-panel{
+        align-items: center;
+    }
     .banner-inside{
         justify-content: space-between;
         padding: 30px;
@@ -323,6 +351,11 @@ body{
         width: 250px;
         padding-left: 10px;
     }
+    .banner-btn-red{
+        width: 250px;
+        padding-left: 10px;
+    }
+
     .banner-title{
         font-size: 23px;
     }
@@ -336,7 +369,5 @@ body{
     }
     .banner-image{
         width: 50%;
-    }
-    
-    
+    }   
 }
