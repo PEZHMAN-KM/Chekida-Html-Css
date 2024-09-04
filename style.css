@@ -220,6 +220,57 @@ body{
     border: 2px solid #002A32;
 }
 
+
+.baner-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.banner-inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    gap: 120px;
+}
+.banner-image{
+    border-radius: 20px;
+    width: 150px;
+}
+.banner-btn-brown{
+    border: 2px solid #e3e3e2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 80px;
+    width: 400px;
+    padding: 0px;
+    gap: 20px;
+    background-color: #2f281e;
+    color: #e3e3e2;
+
+    transition: 300ms;
+}
+.banner-btn-brown:hover{
+    background-color: #e3e3e2;
+    color: #2f281e;
+}
+.banner-btn-text{
+    margin: 0px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 80px;
+
+    font-family: 'IranYekan';
+    font-weight: 500;
+    font-size: 15px;
+}
+.banner-title{
+    font-size: 35px;
+}
+
 @media screen and (max-width: 1200px) {
     .header-top-list{
         padding-right: 100px;
@@ -261,4 +312,31 @@ body{
     .header-bottom-btns{
         display: none;
     }
+
+    .banner-inside{
+        justify-content: space-between;
+        padding: 30px;
+        gap: 20px;
+        width: 75%;
+    }
+    .banner-btn-brown{
+        width: 250px;
+        padding-left: 10px;
+    }
+    .banner-title{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner-inside{
+        flex-direction: column;
+        gap: 30px;
+        width: 75%;
+    }
+    .banner-image{
+        width: 50%;
+    }
+    
+    
 }
