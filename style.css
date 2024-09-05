@@ -458,6 +458,101 @@ body{
     background-color: #fff;
     color: #002a32;
 }
+.info-btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    text-decoration: none;
+    background: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #002A32;
+    padding: 9px 19px;
+    border-radius: 10px ;
+    border: 2px solid #002a32;
+
+    transition: 150ms;
+}
+.info-btn:hover{
+    background-color: #002A32;
+    color: white;
+}
+
+.footer-style{
+    background-color: white;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #002a32;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002A32;
+    border-radius: 30px;
+    padding: 0px 30px;
+    margin: 10px 50px;
+}
+.footer-card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.footer-card-icon{
+    background-color: #fff;
+    color: #002a32;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.footer-card-btn{
+    background-color: #fff;
+    color: #002a32;
+    text-decoration: none;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 12px; 
+}
+
+.footer-bottom-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 30px;
+}
+.footer-bottom-list-option{
+    list-style: none;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.footer-botoom-list-items{
+    text-decoration: none;
+    color: #002A32;
+}
+.footer-end-message{
+    text-align: center;
+}
 
 @media screen and (max-width: 1200px) {
     .header-top-list{
@@ -546,6 +641,15 @@ body{
     .card-sort{
         grid-template-columns: auto;
     }
+
+    .footer-card{
+        margin: 10px;
+        font-size: small;
+    }
+
+    .footer-bottom-option{
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -557,4 +661,46 @@ body{
     .banner-image{
         width: 50%;
     }   
+
+    .slidebar-area{
+        padding: 0px;
+    }
+
+
+    h1{
+        font-size: larger;
+    }
+    h3{
+        font-size: large;
+    }
+    h3{
+        font-size: medium;
+    }
+    p{
+        font-size: small;
+    }
+
+
+    .card-items{
+        font-size: small;
+    }
+    .footer-card-icon{
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .footer-card-text{
+        font-size: small !important;
+    }
+    .footer-card-btn{
+        padding: 10px;
+    }
+    .footer-bottom-option{
+       flex-direction: column;
+       gap: 0px;
+       justify-content: flex-start;
+       align-items: start;
+       padding-right: 20px;
+    }
 }
