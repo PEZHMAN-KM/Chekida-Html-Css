@@ -10,3 +10,20 @@ function toggleVisibility() {
         list.innerText="بیشنر";
     }
 }
+
+
+var side = document.getElementById('sideMenu');
+
+function toggleSideMenu(){
+  if (side.style.display === 'none') {
+    side.style.display = 'flex';
+  } else {
+    side.style.display = 'none';
+  }
+}
+
+window.addEventListener("resize",()=>{
+  if(window.screen.width>=990){
+    side.style.display = 'none';
+  }
+});

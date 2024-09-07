@@ -96,6 +96,14 @@ body{
     width: 35px;
     height: 35px;
 }
+.header-bottom-menu-btn-style{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background-color: transparent;
+}
 
 .header-bottom-chekida-center{
     display: none;
@@ -197,6 +205,38 @@ body{
     align-items: center;
     gap: 5px;
 }
+
+.header-bottom-menu-items{
+    text-decoration: none;
+    color: #002A32;
+    font-size: 18px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.header-menu-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #002a32;
+    width: 250px;
+
+    position: fixed;
+    top: 80px;
+    right: 20px;
+}
+
 .header-bottom-application{
     display: flex;
     justify-content: center;
