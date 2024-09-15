@@ -72,6 +72,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 7px 0px;
 }
 
 .header-bottom-center-top{
@@ -233,7 +234,7 @@ body{
     width: 250px;
 
     position: fixed;
-    top: 80px;
+    top: 60px;
     right: 20px;
 }
 
@@ -616,7 +617,7 @@ body{
     }
     .header-bottom-center-top{
         justify-content: space-between;
-        padding: 30px;
+        padding: 3px 10px;
     }
     .header-bottom-center-bottom{
         display: none;
