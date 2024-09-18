@@ -37,6 +37,7 @@ body{
     margin: 0px;
 }
 
+
 /* -----HEADER----- */
 
 /* Header Top */
@@ -263,122 +264,128 @@ body{
     border: 2px solid #002A32;
 }
 
+/* -----MAIN----- */
 
-.baner-center{
+.main-center{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-.banner-inside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    border-radius: 30px;
-    gap: 120px;
-}
-.banner-text-panel{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: start;
+    flex-direction: row;
 }
-.banner-image{
+
+.Main-informain-book-panel{
+    padding: 10px 50px;
+}
+
+.main-navigator-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.navigator-text{
+    text-decoration: none;
+    color: black;
+}
+
+.main-items-button-panel{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.main-items-info-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    color: black;
+    border: black solid 1px;
+    width: 110px;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+
+.main-book-image-panel{
+
+    position: sticky;
+    top: 200px;
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    gap: 15px;
+}
+.main-book-image {
+    width: 250px;
     border-radius: 20px;
-    width: 150px;
 }
-.banner-btn-brown{
-    border: 2px solid #e3e3e2;
+.main-book-image-option{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    border-radius: 80px;
-    width: 400px;
-    padding: 0px;
-    gap: 20px;
-    background-color: #2f281e;
-    color: #e3e3e2;
+}
+.main-button-summary{
+    text-decoration: none;
+    background-color: #2FDD92;
+    color: #002a32;
+    font-size: large;
+    padding: 8px;
+    border: #2FDD92 solid 1px;
 
-    transition: 500ms;
-}
-.banner-btn-brown:hover{
-    background-color: #e3e3e2;
-    color: #2f281e;
-}
-.banner-btn-red{
-    border: 2px solid #f4c7b9;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    border-radius: 80px;
-    width: 400px;
-    padding: 0px;
-    gap: 20px;
-    background-color: #710000;
-    color: #f4c7b9;
+    width: 120px;
+    gap: 8px;
 
-    transition: 500ms;
+    transition: 300ms;
 }
-.banner-btn-red:hover{
-    background-color: #f4c7b9;
-    color: #710000;
+.main-button-summary:hover{
+    background-color: white;
+    border: #002A32 solid 1px;
 }
-.banner-btn-tosi{
-    border: 2px solid #e3e3e2;
+
+.main-info-area{
+    width: 800px;
+}
+
+.info-btn-center{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    border-radius: 80px;
-    width: 400px;
-    padding: 0px;
-    gap: 20px;
-    background-color: #323230;
-    color: #e3e3e2;
 
-    transition: 500ms;
 }
-.banner-btn-tosi:hover{
-    background-color: #e3e3e2;
-    color: #323230;
-}
-.banner-btn-pink{
-    border: 2px solid #921E27;
+.info-btn{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    border-radius: 80px;
-    width: 400px;
-    padding: 0px;
-    gap: 20px;
-    background-color: #f6c5cb61;
-    color: #921E27;
+    gap: 5px;
 
-    transition: 500ms;
+    text-decoration: none;
+    background: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #002A32;
+    padding: 5px 15px;
+    border-radius: 10px ;
+    border: 2px solid #002a32;
+
+    transition: 150ms;
 }
-.banner-btn-pink:hover{
-    background-color: #921E27;
+.info-btn:hover{
+    background-color: #002A32;
     color: white;
 }
 
 
-.banner-btn-text{
-    margin: 0px;
-    padding: 10px;
-    width: 300px;
-    border-radius: 80px;
 
-    font-family: 'IranYekan';
-    font-weight: 500;
-    font-size: 15px;
-}
-.banner-title{
-    font-size: 35px;
-}
 
-.slidebar-area{
-    padding: 10px 200px;
-}
+/* -----SLIDER----- */
 .slidebar-option-scroll{
     overflow-x: auto;
     white-space: nowrap;
@@ -461,76 +468,58 @@ body{
     border-radius: 5px;
 }
 
-.card-sort{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-    justify-content: center;
-    list-style: none;
-}
-.card-items{
+
+/* -----COMENT----- */
+
+.comment-header-text{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-
-    background-color: #F0F0F0;
-    border-radius: 20px;
-    padding: 10px;
 }
-.card-image{
-    width: 150px;
-    border-radius: 20px;
+.comment-area{
+    background-color: #F5F5F7;
+    border-radius: 25px;
+    padding: 10px 40px;
+    margin: 15px 15px 15px 0;
 }
-.card-btn{
-    text-decoration: none;
-    text-align: center;
-
+.comment-profile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.comment-button-area{
     display: flex;
     justify-content: center;
-    padding: 10px 0px;
-    border-radius: 10px;
-    border: 2px solid #002a32;
-    background-color: #002a32;
-    color: #fff;
+    align-items: center;  
+}
+.button-comment-add{
+    font-size: large;
+    font-family: 'IranYekan';
     font-weight: 500;
-
-    transition: 200ms;
-}
-.card-btn:hover{
-    background-color: #fff;
-    color: #002a32;
-}
-.info-btn-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.info-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-
-    text-decoration: none;
-    background: white;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #002A32;
-    padding: 9px 19px;
-    border-radius: 10px ;
-    border: 2px solid #002a32;
-
-    transition: 150ms;
-}
-.info-btn:hover{
+    
+    border: solid #002A32 2px;
+    padding: 8px 30px;
+    
     background-color: #002A32;
-    color: white;
+    color: #fff;
+    width: 46%;
+}
+.button-comment-other{
+    font-size: large;
+    font-family: 'IranYekan';
+    font-weight: 500;
+    
+    border: solid #002A32 2px;
+    padding: 8px 30px;
+    
+    background-color: #fff;
+    color: #002A32;
+    width: 46%;
 }
 
-/* -----FOOTER----- */
+
+/* -----FOTTER----- */
 
 .footer-style{
     background-color: white;
@@ -599,6 +588,7 @@ body{
     text-align: center;
 }
 
+
 @media screen and (max-width: 1200px) {
     .header-top-list{
         padding-right: 100px;
@@ -606,10 +596,12 @@ body{
     .header-bottom-search-input{
         width: 450px;
     }
-    .slidebar-area{
-        padding: 10px 150px;
+    .Main-informain-book-panel{
+        padding: 10px 30px;
     }
-
+    .main-info-area{
+        width: 650px;
+    }
     .card-sort{
         gap: 15px;
     }
@@ -648,44 +640,22 @@ body{
         display: none;
     }
 
-    .banner-text-panel{
-        align-items: center;
+    .main-info-area{
+        width: 400px;
     }
-    .banner-inside{
-        justify-content: space-between;
-        padding: 30px;
-        gap: 20px;
-        width: 75%;
+    .main-items-button-panel{
+        grid-template-columns: auto auto;
     }
-    .banner-btn-brown{
-        width: 250px;
-        padding-left: 10px;
-    }
-    .banner-btn-red{
-        width: 250px;
-        padding-left: 10px;
-    }
-    .banner-btn-tosi{
-        width: 250px;
-        padding-left: 10px;
-    }
-    .banner-btn-pink{
-        width: 250px;
-        padding-left: 10px;
+    .main-items-info-button{
+        scale: 80%;
     }
 
 
-    .banner-title{
-        font-size: 23px;
-    }
-
-    .slidebar-area{
-        padding: 10px;
-    }
-
+    /* -------------------------------------- */
     .card-sort{
         grid-template-columns: auto;
     }
+    /* -------------------------------------- */
 
     .footer-card{
         margin: 10px;
@@ -697,18 +667,33 @@ body{
     }
 }
 
-@media screen and (max-width: 575px) {
-    .banner-inside{
-        flex-direction: column;
-        gap: 30px;
-        width: 75%;
-    }
-    .banner-image{
-        width: 50%;
-    }   
+@media screen and (max-width: 767px) {
 
-    .slidebar-area{
-        padding: 0px;
+    .main-center{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main-book-image-panel{
+
+        position: relative;
+        top: 10px;
+    }
+    .main-info-area{
+        width: 600px;
+    }
+    .main-items-button-panel{
+        grid-template-columns: auto auto auto auto;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .main-info-area{
+        width: 400px;
+    }
+    .main-items-button-panel{
+        grid-template-columns: auto auto;
     }
 
 
@@ -726,9 +711,14 @@ body{
     }
 
 
+    /* -------------------------------------- */
     .card-items{
         font-size: small;
     }
+    /* -------------------------------------- */
+
+
+
     .footer-card-icon{
         width: 20px;
         height: 20px;
